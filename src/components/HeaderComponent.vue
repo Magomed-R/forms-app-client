@@ -7,14 +7,14 @@ let user = useUserStore()
 
 <template>
     <header>
-        <a href="/" class="header__logo">
+        <RouterLink to="/" class="header__logo">
             Forms App
-        </a>
+        </RouterLink>
 
         <nav class="header__nav">
-            <div class="nav__item">Home</div>
-            <div class="nav__item">All tests</div>
-            <div class="nav__item">My tests</div>
+            <RouterLink to="/" class="nav__item">Home</RouterLink>
+            <RouterLink to="/test/all" class="nav__item">All tests</RouterLink>
+            <RouterLink to="/test/my" class="nav__item">My tests</RouterLink>
         </nav>
 
         <div class="header__account">
@@ -27,7 +27,6 @@ let user = useUserStore()
 
 <style scoped lang="scss">
 header {
-    // max-width: 100%;
     height: 60px;
 
     display: flex;

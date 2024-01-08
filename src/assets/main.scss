@@ -13,6 +13,10 @@ html {
             display: flex;
             flex-direction: column;
             gap: 20px;
+
+            a {
+                text-decoration: none;
+            }
         }
     }
 }
